@@ -368,6 +368,7 @@ img {
   background-size: cover;
   background-position: center;
   padding: 2.5rem 0;
+  margin-bottom: 6rem;
 }
 
 .header__container {
@@ -412,5 +413,31 @@ img {
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1;
+}
+
+.feature {
+  margin-bottom: 6.5rem;
+}
+
+.feature__image {
+  margin-bottom: 3.5rem;
+}
+
+.feature__text {
+  text-align: center;
+}
+
+.feature__text h2 {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.feature__text p {
+  color: #8c8c8c;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
