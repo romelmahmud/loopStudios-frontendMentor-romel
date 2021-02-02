@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="/dist/css/style.css" />
 
     <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -26,33 +27,31 @@
     </style>
   </head>
   <body>
-    <header>
-      <section class="hero">
-        <div class="hero__container">
-          <nav class="hero__nav">
-            <div class="hero__logo">
-              <img src="/images/logo.svg" alt="logo" />
-            </div>
-            <div class="hero_navLinks">
-              <a href="#">About</a>
-              <a href="#">Careers</a>
-              <a href="#">Events</a>
-              <a href="#">Products</a>
-              <a href="#">Support</a>
-            </div>
-            <div class="hero__hamBurger">
-              <img src="/images/icon-hamburger.svg" alt="hamburger" />
-            </div>
-          </nav>
-          <div class="hero__content">
-            <h1>Immersive experiences that deliver</h1>
+    <header class="header">
+      <div class="header__container container">
+        <nav class="nav">
+          <div class="nav__logo">
+            <img src="/images/logo.svg" alt="logo" />
           </div>
+          <div class="nav__links">
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="nav__hamBurger">
+            <img src="/images/icon-hamburger.svg" alt="hamburger" />
+          </div>
+        </nav>
+        <div class="hero__content">
+          <h1>Immersive experiences that deliver</h1>
         </div>
-      </section>
+      </div>
     </header>
     <main>
       <section class="feature">
-        <div class="feature__container">
+        <div class="feature__container container">
           <div class="feature__image">
             <img
               src="/images/desktop/image-interactive.jpg"
@@ -72,7 +71,7 @@
       </section>
       <!--feature section-->
       <section class="products">
-        <div class="products__container">
+        <div class="products__container container">
           <h3 class="products__title">Our creations</h3>
           <div class="products__items">Deep earth</div>
           <div class="products__items">Night arcade</div>
@@ -87,7 +86,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container container">
         <div class="footer__nav">
           <div class="footer__logo">
             <img src="/images/logo.svg" alt="logo" />
@@ -115,28 +114,6 @@
       </div>
     </footer>
     <!-- 
-  
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-  
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
