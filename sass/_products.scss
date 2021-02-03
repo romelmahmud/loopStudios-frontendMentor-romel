@@ -1,0 +1,53 @@
+.products {
+  &__title {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  &__items {
+    color: $white;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 7.5rem;
+    width: auto;
+    margin-bottom: 1.5rem;
+
+    p {
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      width: 40%;
+      font-size: 1.25rem;
+    }
+  }
+  &__img1 {
+    background-image: url(/images/mobile/image-deep-earth.jpg);
+  }
+  &__img2 {
+    background-image: url(/images/mobile/image-night-arcade.jpg);
+  }
+  &__img3 {
+    background-image: url(/images/mobile/image-soccer-team.jpg);
+  }
+  &__img4 {
+    background-image: url(/images/mobile/image-grid.jpg);
+  }
+  &__img5 {
+    background-image: url(/images/mobile/image-from-above.jpg);
+  }
+  &__img6 {
+    background-image: url(/images/mobile/image-pocket-borealis.jpg);
+  }
+  &__img7 {
+    background-image: url(/images/mobile/image-curiosity.jpg);
+  }
+  &__img8 {
+    background-image: url(/images/mobile/image-fisheye.jpg);
+  }
+}
