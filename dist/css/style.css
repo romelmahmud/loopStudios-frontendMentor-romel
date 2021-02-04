@@ -371,7 +371,7 @@ h2 {
 }
 
 .header {
-  background-image: url(/images/desktop/image-hero.jpg);
+  background-image: url(/images/mobile/image-hero.jpg);
   height: 650px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,7 +411,7 @@ h2 {
   color: white;
   border: 2px solid white;
   position: absolute;
-  top: 200px;
+  top: 220px;
 }
 
 .header .hero__content h1 {
@@ -466,7 +466,7 @@ h2 {
   top: 30px;
   left: 20px;
   width: 40%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .products__img1 {
