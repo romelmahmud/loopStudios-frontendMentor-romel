@@ -1,8 +1,25 @@
 .products {
   margin-bottom: 3rem;
+  &__container {
+    @include breakpoint-up(medium) {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1.875rem, repeat(4, 1fr);
+      grid-template-areas:
+        "title btn"
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8";
+    }
+  }
   &__title {
     text-align: center;
     margin-bottom: 3.5rem;
+    @include breakpoint-up(medium) {
+      grid-area: title;
+    }
   }
   &__items {
     color: $white;
@@ -19,42 +36,85 @@
     width: auto;
 
     margin-bottom: 1.5rem;
+    @include breakpoint-up(medium) {
+      height: 16rem;
+      width: 100%;
+    }
 
     p {
       position: absolute;
       top: 30px;
       left: 20px;
-      width: 40%;
+      width: 41%;
+
       font-size: 1.5rem;
     }
   }
   &__img1 {
     background-image: url(/images/mobile/image-deep-earth.jpg);
+    @include breakpoint-up(medium) {
+      background-image: url(/images/desktop/image-deep-earth.jpg);
+      grid-area: img1;
+    }
   }
   &__img2 {
     background-image: url(/images/mobile/image-night-arcade.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img2;
+      background-image: url(/images/desktop/image-night-arcade.jpg);
+    }
   }
   &__img3 {
     background-image: url(/images/mobile/image-soccer-team.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img3;
+      background-image: url(/images/desktop/image-soccer-team.jpg);
+      background-position: top right;
+    }
   }
   &__img4 {
     background-image: url(/images/mobile/image-grid.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img4;
+      background-image: url(/images/desktop/image-grid.jpg);
+    }
   }
   &__img5 {
     background-image: url(/images/mobile/image-from-above.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img5;
+      background-image: url(/images/desktop/image-from-above.jpg);
+    }
   }
   &__img6 {
     background-image: url(/images/mobile/image-pocket-borealis.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img6;
+      background-image: url(/images/desktop/image-pocket-borealis.jpg);
+    }
   }
   &__img7 {
     background-image: url(/images/mobile/image-curiosity.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img7;
+      background-image: url(/images/desktop/image-curiosity.jpg);
+      background-position: top right;
+    }
   }
   &__img8 {
     background-image: url(/images/mobile/image-fisheye.jpg);
+    @include breakpoint-up(medium) {
+      grid-area: img8;
+      background-image: url(/images/desktop/image-fisheye.jpg);
+      background-position: top right;
+    }
   }
   &__btn {
     max-width: 160px;
     margin: 2.5rem auto 6rem;
+    @include breakpoint-up(medium) {
+      grid-area: btn;
+    }
 
     a {
       text-decoration: none;

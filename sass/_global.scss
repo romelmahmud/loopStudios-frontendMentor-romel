@@ -378,6 +378,9 @@ h2 {
   font-size: 1.5rem;
   line-height: 1.2;
   text-transform: uppercase;
+  @include breakpoint-up(medium) {
+    font-size: 1.75rem;
+  }
 }
 
 .logo {
