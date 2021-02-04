@@ -370,6 +370,11 @@ h2 {
   text-transform: uppercase;
 }
 
+.logo img {
+  height: 1.5rem;
+  width: 9rem;
+}
+
 .header {
   background-image: url(/images/mobile/image-hero.jpg);
   height: 650px;
@@ -391,11 +396,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header .nav__logo img {
-  height: 1.5rem;
-  width: 9rem;
 }
 
 .header .nav__links {
@@ -507,7 +507,7 @@ h2 {
 
 .products__btn {
   max-width: 160px;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto 6rem;
 }
 
 .products__btn a {
@@ -518,5 +518,63 @@ h2 {
   color: black;
   border: 1px solid black;
   padding: 0.9375rem 2.5rem;
+}
+
+.footer {
+  background-color: black;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 2.5rem;
+}
+
+.footer__logo img {
+  margin: auto;
+}
+
+.footer__nav .nav_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.125rem;
+}
+
+.footer__nav .nav_links a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__nav .nav_links a:hover {
+  color: dimgray;
+}
+
+.footer__nav .nav_links a:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.footer__socialAndCopyright .social__icons {
+  margin-bottom: 1.5rem;
+}
+
+.footer__socialAndCopyright .social__icons a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.footer__socialAndCopyright .social__icons a img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footer__socialAndCopyright .copyright p {
+  color: dimgray;
 }
 /*# sourceMappingURL=style.css.map */
