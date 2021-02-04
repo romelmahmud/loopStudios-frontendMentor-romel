@@ -7,14 +7,20 @@
     @include breakpoint-up(large) {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-content: center;
     }
   }
 
   &__logo {
     margin-bottom: 2.5rem;
+    @include breakpoint-up(large) {
+      margin-bottom: 1.5rem;
+    }
     img {
       margin: auto;
+      @include breakpoint-up(large) {
+        margin: 0;
+      }
     }
   }
 
@@ -28,6 +34,7 @@
         justify-content: center;
         margin: 0 auto 2.5rem;
       }
+
       a {
         text-decoration: none;
         color: $white;
@@ -40,6 +47,9 @@
           margin-bottom: 1.875rem;
           @include breakpoint-up(medium) {
             margin: 0 1.5rem 0 0;
+          }
+          @include breakpoint-up(large) {
+            margin: 0 2rem 0 0;
           }
         }
       }
@@ -64,6 +74,9 @@
     .copyright {
       p {
         color: $very--dark--gray;
+        @include breakpoint-up(large) {
+          font-size: 0.875rem;
+        }
       }
     }
   }
