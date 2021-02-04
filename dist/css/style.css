@@ -414,8 +414,43 @@ h2 {
   display: none;
 }
 
+@media (min-width: 64em) {
+  .header .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header .nav__links a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  font-size: 0.875rem;
+}
+
+.header .nav__links a:hover {
+  color: dimgray;
+}
+
+@media (min-width: 64em) {
+  .header .nav__links a:not(:last-child) {
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .header .nav__hamBurger {
+    display: none;
+  }
+}
+
 .header .nav__hamBurger img {
-  height: 1rem;
+  height: 1.25rem;
   width: 1.5rem;
 }
 
@@ -424,6 +459,18 @@ h2 {
   border: 2px solid white;
   position: absolute;
   top: 220px;
+}
+
+@media (min-width: 40em) {
+  .header .hero__content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 64em) {
+  .header .hero__content {
+    width: 50%;
+  }
 }
 
 .header .hero__content h1 {
@@ -438,7 +485,14 @@ h2 {
 
 @media (min-width: 40em) {
   .header .hero__content h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .header .hero__content h1 {
+    padding: 1.75rem;
+    font-size: 3.25rem;
   }
 }
 
