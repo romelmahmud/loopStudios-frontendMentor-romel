@@ -1,18 +1,36 @@
 .feature {
   margin-bottom: 6.5rem;
+
+  &__container {
+    position: relative;
+  }
   &__image {
     margin-bottom: 3.5rem;
+
+    @include breakpoint-up(large) {
+      width: 65%;
+    }
   }
 
   &__text {
     text-align: center;
     @include breakpoint-up(medium) {
       text-align: left;
+      @include breakpoint-up(large) {
+        background: $white;
+        position: absolute;
+        top: 50%;
+        left: 49%;
+        padding: 80px 65px;
+      }
     }
 
     p {
       color: $dark--gray;
       line-height: 1.5;
+      @include breakpoint-up(large) {
+        font-size: 0.65rem;
+      }
     }
   }
 }

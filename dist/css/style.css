@@ -500,8 +500,18 @@ h2 {
   margin-bottom: 6.5rem;
 }
 
+.feature__container {
+  position: relative;
+}
+
 .feature__image {
   margin-bottom: 3.5rem;
+}
+
+@media (min-width: 64em) {
+  .feature__image {
+    width: 65%;
+  }
 }
 
 .feature__text {
@@ -514,9 +524,25 @@ h2 {
   }
 }
 
+@media (min-width: 40em) and (min-width: 64em) {
+  .feature__text {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    padding: 80px 65px;
+  }
+}
+
 .feature__text p {
   color: #8c8c8c;
   line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .feature__text p {
+    font-size: 0.65rem;
+  }
 }
 
 .products {
