@@ -3,15 +3,18 @@
   &__container {
     @include breakpoint-up(medium) {
       display: grid;
+
       justify-content: space-between;
+      grid-gap: 1.5rem;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1.875rem, repeat(4, 1fr);
+      grid-template-rows: 1.875rem, repeat(4, 1fr), 1.875rem;
       grid-template-areas:
-        "title btn"
+        "title ."
         "img1 img2"
         "img3 img4"
         "img5 img6"
-        "img7 img8";
+        "img7 img8"
+        "btn .";
     }
   }
   &__title {
@@ -19,6 +22,8 @@
     margin-bottom: 3.5rem;
     @include breakpoint-up(medium) {
       grid-area: title;
+      text-align: left;
+      margin-bottom: 2.5rem;
     }
   }
   &__items {
@@ -39,6 +44,7 @@
     @include breakpoint-up(medium) {
       height: 16rem;
       width: 100%;
+      margin-bottom: 0;
     }
 
     p {
@@ -48,6 +54,12 @@
       width: 41%;
 
       font-size: 1.5rem;
+
+      @include breakpoint-up(medium) {
+        top: 50%;
+        bottom: 50%;
+        width: 45%;
+      }
     }
   }
   &__img1 {
@@ -114,6 +126,7 @@
     margin: 2.5rem auto 6rem;
     @include breakpoint-up(medium) {
       grid-area: btn;
+      margin: 2rem 0 6rem 0;
     }
 
     a {

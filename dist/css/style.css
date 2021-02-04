@@ -454,6 +454,12 @@ h2 {
   text-align: center;
 }
 
+@media (min-width: 40em) {
+  .feature__text {
+    text-align: left;
+  }
+}
+
 .feature__text p {
   color: #8c8c8c;
   line-height: 1.5;
@@ -470,11 +476,12 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    grid-gap: 1.5rem;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 1.875rem, (1fr)[4];
-        grid-template-rows: 1.875rem, repeat(4, 1fr);
-        grid-template-areas: "title btn" "img1 img2" "img3 img4" "img5 img6" "img7 img8";
+    -ms-grid-rows: 1.875rem, (1fr)[4], 1.875rem;
+        grid-template-rows: 1.875rem, repeat(4, 1fr), 1.875rem;
+        grid-template-areas: "title ." "img1 img2" "img3 img4" "img5 img6" "img7 img8" "btn .";
   }
 }
 
@@ -486,6 +493,8 @@ h2 {
 @media (min-width: 40em) {
   .products__title {
     grid-area: title;
+    text-align: left;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -508,6 +517,7 @@ h2 {
   .products__items {
     height: 16rem;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -517,6 +527,14 @@ h2 {
   left: 20px;
   width: 41%;
   font-size: 1.5rem;
+}
+
+@media (min-width: 40em) {
+  .products__items p {
+    top: 50%;
+    bottom: 50%;
+    width: 45%;
+  }
 }
 
 .products__img1 {
@@ -618,6 +636,7 @@ h2 {
 @media (min-width: 40em) {
   .products__btn {
     grid-area: btn;
+    margin: 2rem 0 6rem 0;
   }
 }
 

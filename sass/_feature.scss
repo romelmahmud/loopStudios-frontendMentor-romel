@@ -6,6 +6,9 @@
 
   &__text {
     text-align: center;
+    @include breakpoint-up(medium) {
+      text-align: left;
+    }
 
     p {
       color: $dark--gray;
