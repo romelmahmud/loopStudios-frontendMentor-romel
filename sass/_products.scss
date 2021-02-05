@@ -137,13 +137,13 @@
   &__btn {
     max-width: 160px;
     margin: 2.5rem auto 6rem;
+    z-index: 10;
     @include breakpoint-up(medium) {
       grid-area: btn;
       margin: 2rem 0 6rem 0;
     }
     @include breakpoint-up(large) {
-      align-self: end;
-      margin: 0 0 auto;
+      margin: 15px 0 0 0;
       justify-self: end;
     }
 

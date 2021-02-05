@@ -1,5 +1,5 @@
 .feature {
-  margin-bottom: 6.5rem;
+  margin-bottom: 7.5rem;
 
   &__container {
     position: relative;
@@ -25,7 +25,7 @@
       }
     }
     h2 {
-      font-size: 2rem;
+      font-size: 1.75rem;
       width: 75%;
     }
 
@@ -33,8 +33,8 @@
       color: $dark--gray;
       line-height: 1.5;
       @include breakpoint-up(large) {
-        font-size: 0.5rem;
-        width: 60%;
+        font-size: 0.675rem;
+        width: 85%;
         line-height: 1.8;
       }
     }
