@@ -58,6 +58,10 @@
   &__socialAndCopyright {
     .social__icons {
       margin-bottom: 1.5rem;
+
+      @include breakpoint-up(large) {
+        text-align: right;
+      }
       a {
         &:not(:last-child) {
           margin-right: 1rem;

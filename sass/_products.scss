@@ -18,7 +18,8 @@
     }
     @include breakpoint-up(large) {
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 2rem, repeat(2, 1fr);
+      grid-template-rows: 4.5rem repeat(2, 1fr);
+
       grid-template-areas:
         "title title . btn"
         "img1 img2 img3 img4"
@@ -34,8 +35,8 @@
       margin-bottom: 2.5rem;
     }
     @include breakpoint-up(large) {
-      margin-bottom: 2rem;
-      align-self: end;
+      margin-bottom: 0;
+      align-self: center;
       justify-self: start;
     }
   }
@@ -72,6 +73,10 @@
         top: 50%;
         bottom: 50%;
         width: 45%;
+      }
+
+      @include breakpoint-up(large) {
+        width: 70%;
       }
     }
   }
@@ -135,7 +140,6 @@
     }
   }
   &__btn {
-    max-width: 160px;
     margin: 2.5rem auto 6rem;
     z-index: 10;
     @include breakpoint-up(medium) {
@@ -143,8 +147,9 @@
       margin: 2rem 0 6rem 0;
     }
     @include breakpoint-up(large) {
-      margin: 0.5rem 0 0 0;
       justify-self: end;
+      align-self: center;
+      margin: 0;
     }
 
     a {
