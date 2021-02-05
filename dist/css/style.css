@@ -395,11 +395,50 @@ h2 {
   background-position: center;
   padding: 2.5rem 0;
   margin-bottom: 6rem;
+  position: relative;
 }
 
 @media (min-width: 40em) {
   .header {
     background-image: url(/images/desktop/image-hero.jpg);
+  }
+}
+
+.header .nav__mobileLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  background-color: black;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  padding-top: 15rem;
+  padding-left: 2.5rem;
+}
+
+.header .nav__mobileLinks a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.header .nav__mobileLinks a:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 64em) {
+  .header .nav__mobileLinks {
+    display: none;
   }
 }
 
@@ -414,6 +453,10 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header .nav__logo {
+  z-index: 30;
 }
 
 .header .nav__links {
@@ -470,6 +513,10 @@ h2 {
 .header .nav__hamBurger img {
   height: 1.25rem;
   width: 1.5rem;
+}
+
+.header .nav__close {
+  z-index: 30;
 }
 
 .header .hero__content {
