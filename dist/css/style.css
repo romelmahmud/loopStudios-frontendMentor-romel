@@ -353,8 +353,14 @@ img {
 
 .container {
   width: 80%;
-  max-width: 70rem;
+  max-width: 65rem;
   margin: auto;
+}
+
+@media (min-width: 64em) {
+  .container {
+    width: 70%;
+  }
 }
 
 .dp-none {
@@ -373,6 +379,12 @@ h2 {
 @media (min-width: 40em) {
   h2 {
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 40em) {
+  h2 {
+    font-size: 2rem;
   }
 }
 
@@ -529,7 +541,7 @@ h2 {
     background: white;
     position: absolute;
     top: 50%;
-    left: 49%;
+    left: 47%;
     padding: 50px 0 50px 50px;
   }
 }
@@ -572,6 +584,16 @@ h2 {
   }
 }
 
+@media (min-width: 64em) {
+  .products__container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 2rem, (1fr)[2];
+        grid-template-rows: 2rem, repeat(2, 1fr);
+        grid-template-areas: "title title . btn" "img1 img2 img3 img4" "img5 img6 img7 img8";
+  }
+}
+
 .products__title {
   text-align: center;
   margin-bottom: 3.5rem;
@@ -582,6 +604,17 @@ h2 {
     grid-area: title;
     text-align: left;
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .products__title {
+    margin-bottom: 2rem;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
@@ -724,6 +757,17 @@ h2 {
   .products__btn {
     grid-area: btn;
     margin: 2rem 0 6rem 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .products__btn {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    margin: 0 0 auto;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
 }
 

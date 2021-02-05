@@ -16,6 +16,14 @@
         "img7 img8"
         "btn .";
     }
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 2rem, repeat(2, 1fr);
+      grid-template-areas:
+        "title title . btn"
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8";
+    }
   }
   &__title {
     text-align: center;
@@ -24,6 +32,11 @@
       grid-area: title;
       text-align: left;
       margin-bottom: 2.5rem;
+    }
+    @include breakpoint-up(large) {
+      margin-bottom: 2rem;
+      align-self: end;
+      justify-self: start;
     }
   }
   &__items {
@@ -127,6 +140,11 @@
     @include breakpoint-up(medium) {
       grid-area: btn;
       margin: 2rem 0 6rem 0;
+    }
+    @include breakpoint-up(large) {
+      align-self: end;
+      margin: 0 0 auto;
+      justify-self: end;
     }
 
     a {

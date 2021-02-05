@@ -363,8 +363,11 @@ img {
 
 .container {
   width: 80%;
-  max-width: 70rem;
+  max-width: 65rem;
   margin: auto;
+  @include breakpoint-up(large) {
+    width: 70%;
+  }
 }
 
 .dp-none {
@@ -380,6 +383,9 @@ h2 {
   text-transform: uppercase;
   @include breakpoint-up(medium) {
     font-size: 1.75rem;
+  }
+  @include breakpoint-up(medium) {
+    font-size: 2rem;
   }
 }
 
