@@ -627,6 +627,17 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+.products__items::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.1;
+}
+
 @media (min-width: 40em) {
   .products__items {
     height: 16rem;
