@@ -38,10 +38,21 @@
       a {
         text-decoration: none;
         color: $white;
-        transition: color 300ms ease-in-out;
+        position: relative;
 
-        &:hover {
-          color: $very--dark--gray;
+        &::after {
+          content: "";
+          width: 1.75rem;
+          height: 2px;
+          background-color: white;
+          position: absolute;
+          top: 1.75rem;
+          left: 25%;
+          opacity: 0;
+          transition: opacity 250ms ease-in;
+        }
+        &:hover::after {
+          opacity: 1;
         }
         &:not(:last-child) {
           margin-bottom: 1.875rem;
@@ -57,20 +68,41 @@
   }
   &__socialAndCopyright {
     .social__icons {
+      width: 70%;
+      margin-left: auto;
       margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
 
       @include breakpoint-up(large) {
         text-align: right;
       }
-      a {
-        &:not(:last-child) {
-          margin-right: 1rem;
+      .icon {
+        position: relative;
+        &::after {
+          content: "";
+          width: 1.25rem;
+          height: 2px;
+          background-color: $white;
+          position: absolute;
+          top: 2.15rem;
+          left: 10%;
+          opacity: 0;
+          transition: opacity 250ms ease-in;
         }
+        &:hover::after {
+          opacity: 1;
+        }
+        a {
+          // &:not(:last-child) {
+          //   margin-right: 1rem;
+          // }
 
-        img {
-          display: inline-block;
-          width: 1.5rem;
-          height: 1.5rem;
+          img {
+            // display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+          }
         }
       }
     }

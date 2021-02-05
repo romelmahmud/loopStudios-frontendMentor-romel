@@ -28,12 +28,25 @@
       a {
         text-decoration: none;
         color: $white;
-        transition: color 300ms ease-in-out;
-        font-size: 0.875rem;
 
-        &:hover {
-          color: $very--dark--gray;
+        font-size: 0.875rem;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 1.75rem;
+          height: 2px;
+          background-color: white;
+          position: absolute;
+          top: 1.75rem;
+          left: 25%;
+          opacity: 0;
+          transition: opacity 250ms ease-in;
         }
+        &:hover::after {
+          opacity: 1;
+        }
+
         &:not(:last-child) {
           @include breakpoint-up(large) {
             margin: 0 2rem 0 0;
