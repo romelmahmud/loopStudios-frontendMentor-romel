@@ -384,9 +384,6 @@ h2 {
   @include breakpoint-up(medium) {
     font-size: 1.75rem;
   }
-  @include breakpoint-up(medium) {
-    font-size: 2rem;
-  }
 }
 
 .logo {

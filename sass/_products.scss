@@ -143,7 +143,7 @@
       margin: 2rem 0 6rem 0;
     }
     @include breakpoint-up(large) {
-      margin: 15px 0 0 0;
+      margin: 0.5rem 0 0 0;
       justify-self: end;
     }
 
@@ -156,6 +156,13 @@
       border: 1px solid $black;
 
       padding: 0.9375rem 2.5rem;
+
+      @include breakpoint-up(large) {
+        letter-spacing: 4.5px;
+        font-size: 0.5625rem;
+        border: 0.75px solid $black;
+        padding: 0.703125rem 1.875rem;
+      }
     }
   }
 }
