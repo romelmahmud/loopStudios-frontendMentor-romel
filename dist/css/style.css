@@ -342,6 +342,10 @@ template {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Alata", sans-serif;
 }
