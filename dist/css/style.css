@@ -387,6 +387,16 @@ h2 {
   width: 9rem;
 }
 
+.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hidden {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
 .header {
   background-image: url(/images/mobile/image-hero.jpg);
   height: 650px;
@@ -422,6 +432,10 @@ h2 {
   left: 0;
   padding-top: 15rem;
   padding-left: 2.5rem;
+  -webkit-transition: -webkit-transform 300ms ease-in;
+  transition: -webkit-transform 300ms ease-in;
+  transition: transform 300ms ease-in;
+  transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
 }
 
 .header .nav__mobileLinks a {
@@ -504,6 +518,11 @@ h2 {
   }
 }
 
+.header .nav__hamBurger {
+  cursor: pointer;
+  z-index: 30;
+}
+
 @media (min-width: 64em) {
   .header .nav__hamBurger {
     display: none;
@@ -516,6 +535,8 @@ h2 {
 }
 
 .header .nav__close {
+  cursor: pointer;
+  display: none;
   z-index: 30;
 }
 

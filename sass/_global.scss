@@ -392,3 +392,10 @@ h2 {
     width: 9rem;
   }
 }
+
+.show {
+  transform: translateX(0);
+}
+.hidden {
+  transform: translateX(-100%);
+}

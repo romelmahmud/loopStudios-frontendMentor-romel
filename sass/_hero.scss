@@ -25,6 +25,7 @@
     left: 0;
     padding-top: 15rem;
     padding-left: 2.5rem;
+    transition: transform 300ms ease-in;
 
     a {
       text-decoration: none;
@@ -89,6 +90,8 @@
       }
     }
     &__hamBurger {
+      cursor: pointer;
+      z-index: 30;
       @include breakpoint-up(large) {
         display: none;
       }
@@ -99,6 +102,8 @@
     }
 
     &__close {
+      cursor: pointer;
+      display: none;
       z-index: 30;
     }
   }
