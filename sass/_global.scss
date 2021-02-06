@@ -392,10 +392,20 @@ h2 {
     width: 9rem;
   }
 }
-
+// showing and Hidding mobile nav menu
 .show {
   transform: translateX(0);
 }
 .hidden {
   transform: translateX(-100%);
+}
+
+// disable and enable scroll behavier
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: visible;
 }
